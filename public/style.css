@@ -1,0 +1,28 @@
+body {
+    background-color: aqua;
+}
+
+.banner {
+    background-color: rgb(92, 136, 84);
+    padding: 10px;
+}
+
+.cookingicon {
+    max-width: 60px;
+}
+
+.socialicons {
+    max-width: 60px;
+}
+
+.breadcrumb ul {
+    display: flex;
+}
+    
+.breadcrumb li::before {
+    content: "/";
+}
+    
+.breadcrumb li:first-child::before {
+    content: "";
+}
