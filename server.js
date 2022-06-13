@@ -1,14 +1,12 @@
-let apiKey = "51fc497b03704f1abcaf3f960ebc1148";
+const path = require('path');
+const express = require('express');
+// require('dotenv').config();
+// const routes = require('./routes');
+const session = require('express-session');
 
-let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}`;
+const app = express();
+const PORT = 3001;
 
-const fetchRecipes = async () => {
-    try {
-          const response = await fetch(url);
-    const recipesJson = await response.json();
-    console.log(recipesJson);
-    }
-    catch {
-        console.log(error);
-    }
-}
+app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}!`);
+  });
