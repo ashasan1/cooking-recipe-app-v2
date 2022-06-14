@@ -1,10 +1,9 @@
-console.log("hello world!");
-
 let recipeContainer = document.getElementById('recipeContainer');
-
 let apiKey = "51fc497b03704f1abcaf3f960ebc1148";
-
 let url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}`;
+
+let addRecipeBtn = document.querySelector('#newrecipe');
+let newRecipeInput = document.querySelector('#newrecipeinput');
 
 const fetchAllRecipes = async () => {
     try {
@@ -30,6 +29,6 @@ const fetchAllRecipes = async () => {
 
 fetchAllRecipes();
 
-$('.carousel').carousel({
-    interval: 2000
-  })
+addRecipeBtn.addEventListener("click", () => {
+    console.log("new recipe added!");
+})
