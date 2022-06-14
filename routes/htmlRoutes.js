@@ -1,4 +1,5 @@
-const path = require("path");
-const express = require("express");
-const router = express.Router();
+const router = require('express').Router();
 
+router.get('/', (request, response) => {
+    response.sendFile('../public/index.html');
+})
