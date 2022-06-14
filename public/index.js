@@ -17,7 +17,7 @@ const fetchAllRecipes = async () => {
         recipeTitle.textContent = recipesJson.results[i].title;
         let recipeImage = document.createElement('img');
         recipeImage.src = recipesJson.results[i].image;
-        
+
         recipeContainer.appendChild(recipeTitle);
         recipeContainer.appendChild(recipeImage);
 
@@ -29,3 +29,7 @@ const fetchAllRecipes = async () => {
 };
 
 fetchAllRecipes();
+
+$('.carousel').carousel({
+    interval: 2000
+  })
