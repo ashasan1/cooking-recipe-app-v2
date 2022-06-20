@@ -32,3 +32,4 @@ fetchAllRecipes();
 addRecipeBtn.addEventListener("click", () => {
     console.log("new recipe added!");
 })
+
